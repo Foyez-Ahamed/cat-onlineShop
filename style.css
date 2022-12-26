@@ -1,0 +1,126 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*...................
+header part start
+...................*/
+   /* 1st col style  */
+  .h-1-color{
+    font-size: 50px;
+    color: #13adad;
+    font-weight: 700;
+  }
+ .h-color{
+    font-size: 40px;
+    color: #000000;
+    font-weight: 700;
+
+ }
+
+
+
+/*...................
+header part end
+...................*/
+
+
+/*...................
+main part one start
+...................*/
+
+/* .main-cards{
+  position: relative;
+  z-index: -1;
+} */
+
+/* card 1  */
+.c-1-h-style{
+  font-weight: 700;
+  color: #B71D1D;
+}
+
+.c-2-h-style{
+  font-weight: 700;
+  color: #ffc400bc;
+}
+
+.c-3-h-style{
+  font-weight: 700;
+  color: green;
+}
+
+/*...................
+main one part end
+...................*/
+
+
+/* <!-- ...................
+main part two start
+................... --> */
+
+/* cards  */
+
+.span-style{
+  font-weight: 700;
+  font-size: 25px;
+  color: #40e0cba0;
+}
+
+
+/* <!-- ...................
+main part two end
+................... --> */
+
+
+/* <!-- ...................
+main log part start
+................... --> */
+
+.logo-image{
+  width: 100px;
+  height: 100px;
+}
+
+/* <!-- ...................
+main log part end
+................... --> */
+
+
+
+/* <!-- ...................
+main customers review part end
+................... --> */
+
+.cus-img-1{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* <!-- ...................
+main customers review part end
+................... --> */
+
+
+
+/* <!-- ...................
+    main background image part start
+    ................... --> */
+
+   #background-img{
+    background-image: url(images/for\ background\ image.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+   }
+    
+/* <!-- ...................
+    main background image part end
+    ................... --> */

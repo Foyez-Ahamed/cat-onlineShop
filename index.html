@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <title>Little Buddy</title>
+  <!--...... Google fonts.....  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--.......css favicon ....... -->
+  <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/null/pet-commands-train.png" type="image/x-icon">
+  <!-- .....font awesome cdn.....  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- .....Bootstrap cdn ....... -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!--...... Custom css........  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- ...................
+    header part start
+    ................... -->
+
+    <header>
+      <section class="container-fluid my-3">
+        <div class="row">
+          <!-- col 1  -->
+          <div class="col-md-3 col-lg-3 col-sm-12">
+           <h1 class="h-1-color">Little <span class="h-color">Buddy</span></h1>
+          </div>
+          <!-- col 2  -->
+          <div class="col-md-6  col-lg-6 col-sm-12">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-lock"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Delevary</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">My account</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+           <!-- col 3  -->
+          <div class="col-md-3  col-lg-3 col-sm-12">
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+
+     <!-- ...................
+    header part end
+    ................... -->
+
+
+     <!-- ...................
+    main navbar part start
+    ................... -->
+    
+    <section class="container bg-dark p-1 ">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light " href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="#">Protfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light " href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+              <li class="nav-item dropdown bg-secondary">
+                <a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-cart-shopping text-warning"></i> ShoppingCart
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+      <!-- ...................
+    main navbar part end
+    ................... -->
+   
+
+    <!-- ...................
+    main part one start
+    ................... -->
+
+    <section class="container-fluid  bg-secondary text-dark bg-opacity-25">
+
+      <main>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+          <img class="main-img img-fluid ms-5 w-100" src="images/main img (2).jpg" alt="">
+          </div>
+          <div class="col-md-6 col-sm-12 main-cards">
+            <!-- card 1  -->
+            <div class="card-1 ms-5 my-1 border-start border-5 border-danger rounded-start">
+              <div class="card" style="max-width: 440px;">
+                <div class="row g-0">
+                  <div class="col-md-4 col-lg-4 col-sm-12">
+                    <img src="images/little_cat_pic-removebg-preview.png" class="img-fluid  d-flex align-items-center my-4 " alt="...">
+                  </div>
+                  <div class="col-md-8 col-lg-8 col-sm-12">
+                    <div class="card-body">
+                      <h3 class="card-title c-1-h-style">Cat Food</h3>
+                      <p class="card-text">Best Place for Cat Food, Dog Food, Rabbit Food & Birds Food. 100% Satisfaction Guaranteed.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <!-- card 2  -->
+          <div class="card-2 ms-5 my-1 border-start border-5 border-warning rounded-start">
+            <div class="card " style="max-width: 440px;">
+              <div class="row g-0">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                  <img src="images/Pet-Tortoise-Feature-removebg-preview.png" class="img-fluid d-flex align-items-center my-4 " alt="...">
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-12">
+                  <div class="card-body">
+                    <h3 class="card-title c-2-h-style">Habitats</h3>
+                    <p class="card-text"> A habitat is a place where an organism makes its home. A habitat meets</p>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- card-3  -->
+            <div class="card-3 my-0 ms-5  border-start border-5 border-success rounded-start">
+              <div class="card" style="max-width: 440px;">
+                <div class="row g-0">
+                  <div class="col-md-4 col-lg-4 col-sm-12">
+                    <img  src="images/little_cat_with_toys-removebg-preview.png" class="img-fluid rounded-start  d-flex align-items-center my-4" alt="...">
+                  </div>
+                  <div class="col-md-8 col-lg-8 col-sm-12">
+                    <div class="card-body">
+                      <h3 class="card-title c-3-h-style">Cat Toys</h3>
+                      <p class="card-text">3371 items found in Cat Toys. Funny Cat Toys for Cat Kitten Playing with toys.</p>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+           
+
+        </div>
+      </main>
+
+    </section>
+
+
+     <!-- ...................
+    main part one end
+    ................... -->
+
+
+     <!-- ...................
+    main part two start
+    ................... -->
+
+     <section class="container mb-3 bg-secondary text-dark bg-opacity-10">
+
+      <h3 class="bg-info text-dark bg-opacity-50 p-3">Featured Items</h3>
+       
+      <!-- cards  -->
+
+      <div class="row row-cols-1 row-cols-md-4 g-4 my-3">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/pat carrier.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Cat Carrier</h4>
+              <p class="text-center">This is gourgious pat carrier</p>
+              <span class="text-center d-block span-style">$103.50</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/petrodex denta.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Petrodex Denta</h4>
+              <p class="text-center">This is petrodex denta for cat</p>
+              <span class="text-center d-block span-style">$75.25</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/freshing spray.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Freshening Sprays</h4>
+              <p class="text-center">Freshening Sprays for cat</p>
+              <span class="text-center d-block span-style">$90.11</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/bath robe.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Bath Robe</h4>
+              <p class="text-center">This is bath robe cat</p>
+              <span class="text-center d-block span-style">$112.05</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </section>
+
+
+     <!-- ...................
+    main part two end
+    ................... -->
+
+
+    <!-- ...................
+    main part three start
+    ................... -->
+
+    <section class="container mb-2 bg-secondary text-dark bg-opacity-10">
+
+      <h3 class="bg-danger text-dark bg-opacity-50 p-3">Top rated products</h3>
+       
+      <!-- cards  -->
+ 
+      <div class="row row-cols-1 row-cols-md-4 g-4 my-3">
+        <!-- main three card 1  -->
+        <div class="col">
+          <div class="card h-100">
+             <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+             </div>
+            <img src="images/for card 1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Cat EarCotton</h4>
+              <p class="text-center">This is cat ear cotton</p>
+              <span class="text-center d-block span-style">$10.50</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 2  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/petrodex denta.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Petrodex Denta</h4>
+              <p class="text-center">This is petrodex denta for cat</p>
+              <span class="text-center d-block span-style">$75.55</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 3  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/freshing spray.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Freshening Sprays</h4>
+              <p class="text-center">Freshening Sprays for cat</p>
+              <span class="text-center d-block span-style">$90.99</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 4  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/bath robe.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Bath Robe</h4>
+              <p class="text-center">This is bath robe cat</p>
+              <span class="text-center d-block span-style">$112.34</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+          
+          <!-- main three card 5  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+             </div>
+            <img src="images/for card 5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Denim Bag</h4>
+              <p class="text-center">Denim bag for cat</p>
+              <span class="text-center d-block span-style">$115.45</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 6  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/for card 6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Pat carrier</h4>
+              <p class="text-center">This is gourgious pat carrier</p>
+              <span class="text-center d-block span-style">$65.65</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 7  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/for card 7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Freshening Sprays</h4>
+              <p class="text-center">Freshening Sprays for cat</p>
+              <span class="text-center d-block span-style">$44.75</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 8  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/for card 8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Bat Rube</h4>
+              <p class="text-center">Gourgious bath rube for cat</p>
+              <span class="text-center d-block span-style">$90.25</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+          <!-- main three card 9  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+             </div>
+            <img src="images/for card 9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Cat problem solving</h4>
+              <p class="text-center">Cat problem solving products</p>
+              <span class="text-center d-block span-style">$285.85</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+         <!-- main three card 10  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/for card 10.jpg" class="card-img-top h-100" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Cat Spoiling</h4>
+              <p class="text-center">Cat Spoiling for cat</p>
+              <span class="text-center d-block span-style">$190.99</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 11  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/for card 11.jpg" class="card-img-top h-100" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Holistic Cat Food</h4>
+              <p class="text-center">Nutritions Holistic Cat Food</p>
+              <span class="text-center d-block span-style">$130.11</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- main three card 12  -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="text-center">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+             </div>
+            <img src="images/for card 12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center">Self-Groming</h4>
+              <p class="text-center">Self-Groming for cat</p>
+              <span class="text-center d-block span-style">$55.50</span>
+              <button class="btn btn-secondary w-100 my-2">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </section>
+
+     
+    
+     <!-- ...................
+    main part three end
+    ................... -->
+
+
+     <!-- ...................
+    main log0 part start
+    ................... -->
+
+    <section class="container-fluid my-5 mb-3 ">
+
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-md-1 text-center">
+           <img src="images/logo 1.jpg" class="logo-image" alt="">
+          </div>
+
+          <div class="col-md-1 text-center">
+            <img src="images/logo 2.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 3.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 4.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 5.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 6.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 7.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 8.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 9.jpg" class="logo-image" alt="">
+          </div>
+          <div class="col-md-1 text-center">
+            <img src="images/logo 10.jpg" class="logo-image" alt="">
+          </div>
+        </div>
+    </section>
+
+
+     <!-- ...................
+    main logo part end
+    ................... -->
+
+
+    <!-- ...................
+    main customers review part start
+    ................... -->
+
+    <section class="container my-5 p-3">
+
+      <h3 class="bg-success p-2 text-dark bg-opacity-50 p-3">Customers Review</h3>
+
+      <div class="row my-5">
+
+        <div class="col-md-4 col-sm-12 bg-light text-center">
+           <div class="row">
+            <div class="col-md-6">
+            <h2 class="text-success">PetCareRx's</h2>
+            </div>
+            <div class="col-md-6">
+              <img src="images/customers review 1.jpg" class="cus-img-1" alt="">
+              <span class="text-success ms-1">Jacobs</span>
+            </div>
+           </div>
+             <div>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-warning" style="font-size: 25px;"></i>
+             </div>
+             <h3 class="my-3">Based on 33,4666 reviews <i class="fa-solid fa-circle-check text-info" style="font-size: 15px;"></i> </h3>
+             <h2 class="my-3">ResallerRatig <i class="fa-solid fa-circle-check text-danger" style="font-size: 40px;"></i> </h2>
+        </div>
+
+        <div class="col-md-4 col-sm-12 bg-light text-center">
+          <div class="row">
+            <div class="col-md-6">
+            <h2 class="text-success">VegiCats</h2>
+            </div>
+            <div class="col-md-6">
+              <img src="images/customers review 2.jpg" class="cus-img-1" alt="">
+              <span class="text-success">Antony</span>
+            </div>
+           </div>
+             <div>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-warning" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-warning" style="font-size: 25px;"></i>
+             </div>
+             <h3 class="my-3">Based on 45,4666 reviews <i class="fa-solid fa-circle-check text-info" style="font-size: 15px;"></i> </h3>
+             <h2 class="my-3">ResallerRatig <i class="fa-solid fa-circle-check text-danger" style="font-size: 40px;"></i> </h2>
+        </div>
+
+        <div class="col-md-4 col-sm-12 bg-light text-center">
+          <div class="row">
+            <div class="col-md-6">
+            <h2 class="text-success">MeowShop</h2>
+            </div>
+            <div class="col-md-6">
+              <img src="images/customers rivew 3.jpg" class="cus-img-1" alt="">
+              <span class="text-success">Jenifa</span>
+            </div>
+           </div>
+             <div>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-info" style="font-size: 25px;"></i>
+              <i class="fa-solid fa-star text-warning" style="font-size: 25px;"></i>
+             </div>
+             <h3 class="my-3">Based on 21,4306 reviews <i class="fa-solid fa-circle-check text-info" style="font-size: 15px;"></i> </h3>
+             <h2 class="my-3">ResallerRatig <i class="fa-solid fa-circle-check text-danger" style="font-size: 40px;"></i> </h2>
+        </div>
+      </div>
+
+    </section>
+
+
+     <!-- ...................
+    main customers review part end
+    ................... -->
+
+
+     <!-- ...................
+    main background image part start
+    ................... -->
+
+    <section id="background-img" class="mb-4 img-fluid">
+      
+    </section>
+
+   
+     <!-- ...................
+    main background image part end
+    ................... -->
+    
+
+
+
+   <!-- ...................
+   footer section start
+    ................... -->
+
+
+   <!-- social media site -->
+  
+   <section class="container my-5 text-center bg-light text-dark bg-opacity-50 ">
+      <div class="d-flex justify-content-between">
+        <a href="#"><i class="fa-brands fa-facebook text-secondary" style="font-size: 40px;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram text-secondary" style="font-size: 40px;"></i></a>
+       <a href="#"> <i class="fa-brands fa-twitter text-secondary" style="font-size: 40px;"></i> </a>       
+        <a href="#"><i class="fa-brands fa-linkedin text-secondary" style="font-size: 40px;"></i></a>        
+        <a href="#"><i class="fa-brands fa-whatsapp text-secondary" style="font-size: 40px;"></i></a>        
+        <a href="#"><i class="fa-brands fa-google-plus text-secondary" style="font-size: 40px;"></i></a>        
+        <a href="#"><i class="fa-brands fa-youtube text-secondary" style="font-size: 40px;"></i></a>        
+                
+      </div>
+   </section>
+    
+   <!-- social media site -->
+
+
+    <!-- footer  -->
+       <section class="container-fluid my-5 bg-dark text-light">
+         <div class="row">
+          <div class="col-md-2 col-sm-12 text-center">
+            <h2 class="text-warning fst-italic">Locations</h2>
+             <p class="my-4">Uttara, Dhaka,Ban 1226</p>
+             <p>NY, USA,6437728</p>
+             <p>Sydney,Australia, 123</p>
+             <p>Abudhabi, UAE, Road-34</p>
+             <p>Istanbul, Turkey, 1345</p>
+          </div>
+          <div class="col-md-2 col-sm-12 text-center">
+            <h2 class="text-warning fst-italic">Social</h2>
+            <p class="my-4">Facebook <i class="fa-brands fa-facebook text-secondary" style="font-size: 15px;"></i> </p>
+            <p>Instagram <i class="fa-brands fa-instagram text-secondary" style="font-size: 15px;"></i> </p>
+            <p>Twitter <i class="fa-brands fa-twitter text-secondary" style="font-size: 15px;"></i> </p>
+            <p>Linkedin <i class="fa-brands fa-linkedin text-secondary" style="font-size: 15px;"></i> </p>
+            <p>WhatsApp <i class="fa-brands fa-whatsapp text-secondary" style="font-size: 15px;"></i> </p>
+          </div>
+          <div class="col-md-2 col-sm-12 text-center">
+            <h2 class="text-warning fst-italic">Services</h2>
+            <p class="my-4">Return Products <i class="fa-solid fa-circle-check text-secondary" style="font-size: 15px;"></i></p>
+            <p>Animal Doctors service <i class="fa-solid fa-circle-check text-secondary" style="font-size: 15px;"></i></p>
+            <p>Product Guaranty <i class="fa-solid fa-circle-check text-secondary" style="font-size: 15px;"></i></p>
+            <p>Quality Product <i class="fa-solid fa-circle-check text-secondary" style="font-size: 15px;"></i></p>
+          </div>
+          <div class="col-md-2 col-sm-12 text-center">
+            <h2 class="text-warning fst-italic">Activity</h2>
+            <p class="my-4">Influencers</p>
+            <p>Affiliate</p>
+            <p>Co-branding</p>
+            <p>Honor</p>
+            <p>Give Away</p>
+          </div>
+          <div class="col-md-4 col-sm-12 text-center">
+            <h2 class="ms-2 my-3 text-warning fst-italic">For any need</h2>
+            <div class="container-fluid">
+              <form class=" my-5 d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search products" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+         </div>
+          
+          <p class="my-5 text-center">Copyright &copy; 2022 littleBuddycatstore. All productsHere. A developerBy FoyezAhamed</p>
+       </section>
+    <!-- footer  -->
+
+
+    <!-- ...................
+   footer section end
+    ................... -->
+
+
+  <!-- bootstrap js cdn  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
